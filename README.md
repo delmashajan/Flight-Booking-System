@@ -32,7 +32,7 @@ A Laravel-based RESTful API for searching and booking flights, secured with JWT 
 1. **Clone the repository**
    ```bash
    git clone https://github.com/delmashajan/Flight-Booking-System.git
-   cd flight-booking-system
+   cd Flight-Booking-System
    ```
 
 2. **Install dependencies**
