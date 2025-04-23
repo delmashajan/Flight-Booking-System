@@ -1,6 +1,3 @@
-Sure! Here's the updated `README.md` content where I've added a clear note under the installation section, asking users to set up their own `.env` file **and** generate their own `JWT_SECRET` using the proper Artisan command:
-
----
 
 ```markdown
 # ✈️ Flight Search and Booking System
