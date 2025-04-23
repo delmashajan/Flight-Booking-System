@@ -1,4 +1,8 @@
+Sure! Here's the updated `README.md` content where I've added a clear note under the installation section, asking users to set up their own `.env` file **and** generate their own `JWT_SECRET` using the proper Artisan command:
 
+---
+
+```markdown
 # ✈️ Flight Search and Booking System
 
 A Laravel-based RESTful API for searching and booking flights, secured with JWT authentication.
@@ -40,17 +44,24 @@ A Laravel-based RESTful API for searching and booking flights, secured with JWT 
    composer install
    ```
 
-3. **Generate application key**
+3. **Copy `.env` file and configure environment**
+   ```bash
+   cp .env.example .env
+   ```
+   - Update the `.env` file with your **database credentials** and other configuration values.
+   - ⚠️ **Do not add the JWT secret manually.** Run the next step to generate it securely.
+
+4. **Generate application key**
    ```bash
    php artisan key:generate
    ```
 
-4. **Set up JWT secret**
+5. **Set up JWT secret**
    ```bash
    php artisan jwt:secret
    ```
 
-5. **Run migrations and seed sample data**
+6. **Run migrations and seed sample data**
    ```bash
    php artisan migrate --seed
    ```
